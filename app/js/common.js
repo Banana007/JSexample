@@ -1,4 +1,6 @@
-const man1 = {name: "zzz", age: 22};
-
-console.log('%c My Friends:', 'color: green; font-weight: bold'); // good
-console.table([man1]); // good
+console.time('looper')
+var x = 0;
+while(x < 20000000) {
+	x++
+}
+console.timeEnd('looper')
