@@ -1,20 +1,17 @@
-const turtle = {
-	name: "Bob",
-	age: 156,
-	legs: 4,
-	food: "milk",
-	shell: true
-};
+var pokemon = ['Pikachu', 'Psyduck', 'Slowpok'];
 
-'bad code'
-function feed(animal) {
-	return `Feed ${animal.name}, ${animal.age}, ${animal.food}`;
-}
-// console.log(feed(turtle));
+'bad array code'
+// pokemon.push('Bulbasaur');
+// pokemon.push('Metapod');
+// pokemon.push('Weedle');
+// console.log(pokemon);
+
+'good array code'
+// push
+pokemon = [...pokemon, 'Bulbasaur', 'Metapod', 'Weedle'];
+
+// unshift
+pokemon = ['Bulbasaur', 'Metapod', 'Weedle', ...pokemon];
+console.table(pokemon);
 
 
-'good code'
-function feed({name, age, food}) {
-	return `Feed ${name} ${age} ${food}`;
-}
-console.log(feed(turtle));
